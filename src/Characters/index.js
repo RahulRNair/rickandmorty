@@ -5,7 +5,7 @@ import { faUser , faMapMarkerAlt} from "@fortawesome/free-solid-svg-icons";
 import React from 'react';
 import axios from 'axios'
 
-import { Card, Button, Container, Row, Col, Form, ButtonToolbar, ButtonGroup, Modal } from 'react-bootstrap';
+import { Card, Button, Container, Row, Col, Form, ButtonToolbar, ButtonGroup, Modal, Spinner } from 'react-bootstrap';
 
 import '../App.css';
 import {getCharcters,getEpisodes} from '../Services/Characters'
@@ -106,18 +106,21 @@ export default class Character extends React.Component {
       <div>
       <Header/>
       <Container fluid="true" >
-      <Modal show={this.state.show} onHide={this.handleClose.bind(this)}>
+      <Modal show={this.state.show} onHide={this.handleClose.bind(this)} scrollable="true" className="main_modal">
         <Modal.Header closeButton>
           <Modal.Title>Episodes</Modal.Title>
         </Modal.Header>
-        <Modal.Body scrollable={this.state.show}>
+        <Modal.Body >
         <ul>
         {items_episode}
         </ul>
         </Modal.Body>
+        <Modal.Footer>
+        </Modal.Footer>
 
       </Modal>
       <Row className="main">
+
       {items}
 
       </Row>

@@ -4,3 +4,14 @@
 .nopadding{
   padding: 0px;
 }
+.header_title{
+  font-size:20px;
+  font-weight: bold;
+  color:white !important
+}
+.main_modal{
+  height:300px;
+}
+.modal-footer{
+  border: 0px;
+}

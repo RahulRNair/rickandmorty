@@ -10,7 +10,7 @@ export default class Header extends React.Component {
       <Container fluid="true" className="nopadding">
 
         <Navbar bg="dark" expand="lg">
-        <Navbar.Brand href="#home">THE RICK AND MORTY</Navbar.Brand>
+        <Navbar.Brand href="#home" className="header_title">THE RICK AND MORTY</Navbar.Brand>
         </Navbar>
 
       </Container>
